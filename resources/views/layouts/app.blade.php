@@ -1320,7 +1320,7 @@
                                 {{--                                </div>--}}
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{route('alarm.management')}}">
                                     <i class="fa fa-chart-line"></i>
                                     <span>Alarm Log</span>
                                 </a>

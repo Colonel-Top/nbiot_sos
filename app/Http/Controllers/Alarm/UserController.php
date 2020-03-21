@@ -23,33 +23,33 @@ class UserController extends Controller
         });
     }
 
-    public function info($id)
-    {
-        $search = Device::findOrFail($id);
-        return view('device.show',['device'=>$search]);
-    }
+//    public function info($id)
+//    {
+//        $search = Device::findOrFail($id);
+//        return view('device.show',['device'=>$search]);
+//    }
     public function index()
     {
 
-        $devices = Device::paginate(10);
-        return view(' device.index', ['devices' => $devices]);
+        $alarms = Alarm::paginate(10);
+        return view(' alarm.index', ['alarm' => $alarms]);
     }
 
-    public function search(Request $request)
-    {
-//        dd($request);
-        if ($request->ajax()) {
-            $devicesinfo = Device::Where('name', 'like', '%' . $request->search . '%')->orWhere('device_id', 'like', '%' . $request->search . '%')->orWhere('description', 'like', '%' . $request->search . '%')->orWhere('device_lat', 'like', '%' . $request->search . '%')->orWhere('device_long', 'like', '%' . $request->search . '%')->get();
-            $devicecount = $devicesinfo->count();
-
-            try {
-                if ($devicecount > 0)
-                    $returnHTML = view('device.search', ['devices' => $devicesinfo])->render();
-            } catch (\Throwable $e) {
-                dd($e);
-            }
-            return Response($returnHTML);
-        }
-
-    }
+//    public function search(Request $request)
+//    {
+////        dd($request);
+//        if ($request->ajax()) {
+//            $devicesinfo = Device::Where('name', 'like', '%' . $request->search . '%')->orWhere('device_id', 'like', '%' . $request->search . '%')->orWhere('description', 'like', '%' . $request->search . '%')->orWhere('device_lat', 'like', '%' . $request->search . '%')->orWhere('device_long', 'like', '%' . $request->search . '%')->get();
+//            $devicecount = $devicesinfo->count();
+//
+//            try {
+//                if ($devicecount > 0)
+//                    $returnHTML = view('device.search', ['devices' => $devicesinfo])->render();
+//            } catch (\Throwable $e) {
+//                dd($e);
+//            }
+//            return Response($returnHTML);
+//        }
+//
+//    }
 }
