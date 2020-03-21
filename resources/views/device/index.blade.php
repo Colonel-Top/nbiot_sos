@@ -35,7 +35,7 @@
             <hr>
             <div class="row">
 
-                @if(Auth::user()->role != "admin")
+                @if(Auth::user()->role == "admin")
                     <div class="col-md-4 text-center">
 
 
