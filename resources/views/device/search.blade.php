@@ -46,7 +46,7 @@
                                     {{date('d-m-Y H:i:s', strtotime($user->created_at))}}
                                 </td>
                                 <td class="table-text">
-                                    <a class="btn btn-outline-primary  @if (Auth::user()->role != "admin" ) disabled  @endif
+                                    <a class="btn btn-outline-primary  @if (Auth::user()->role != "admin" ) disabled  @endif"
                                        href=   "{{route('device.show.edit',$user->id)}}">
                                         Edit
                                     </a>
