@@ -1,11 +1,12 @@
 <?php
 
 
-namespace App\Http\Controllers\Device;
+namespace App\Http\Controllers\Alarm;
 
 
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Alarm;
 use App\Device;
 use Auth;
 use Illuminate\Http\Request;
@@ -32,24 +33,26 @@ class UserController extends Controller
     {
 
         $alarms = Alarm::paginate(10);
-        return view(' alarm.index', ['alarm' => $alarms]);
+        return view(' alarm.index', ['alarms' => $alarms]);
     }
 
-//    public function search(Request $request)
-//    {
-////        dd($request);
-//        if ($request->ajax()) {
-//            $devicesinfo = Device::Where('name', 'like', '%' . $request->search . '%')->orWhere('device_id', 'like', '%' . $request->search . '%')->orWhere('description', 'like', '%' . $request->search . '%')->orWhere('device_lat', 'like', '%' . $request->search . '%')->orWhere('device_long', 'like', '%' . $request->search . '%')->get();
-//            $devicecount = $devicesinfo->count();
-//
-//            try {
-//                if ($devicecount > 0)
-//                    $returnHTML = view('device.search', ['devices' => $devicesinfo])->render();
-//            } catch (\Throwable $e) {
-//                dd($e);
-//            }
-//            return Response($returnHTML);
-//        }
-//
-//    }
+    public function search(Request $request)
+    {
+//        dd($request);
+        if ($request->ajax()) {
+            $target_dev = Device::where('device_id','like','%'.$request->searech.'%')->get()->first();
+            $alarminfo = $target_dev->alarms()->get();
+//            #$devicesinfo = Alarm::Where('name', 'like', '%' . $request->search . '%')->orWhere('device_id', 'like', '%' . $request->search . '%')->orWhere('description', 'like', '%' . $request->search . '%')->orWhere('device_lat', 'like', '%' . $request->search . '%')->orWhere('device_long', 'like', '%' . $request->search . '%')->get();
+            $alarmcount = $alarminfo->count();
+
+            try {
+                if ($alarmcount > 0)
+                    $returnHTML = view('alarm.search', ['alarms' => $alarminfo])->render();
+            } catch (\Throwable $e) {
+                dd($e);
+            }
+            return Response($returnHTML);
+        }
+
+    }
 }

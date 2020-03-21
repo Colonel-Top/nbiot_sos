@@ -34,6 +34,7 @@ Route::prefix('admin')->group(function ()
 Route::prefix('user')->group(function ()
 {
     Route::get('/alarm', 'Alarm\UserController@index')->name('alarm.management');
+    Route::post('/alarm/search', 'Alarm\UserController@search')->name('alarm.search');
     Route::get('/device', 'Device\UserController@index')->name('device.management');
     Route::get('/device/info/{id}', 'Device\UserController@info')->name('device.show.info');
     Route::post('/device/search', 'Device\UserController@search')->name('user.search');
