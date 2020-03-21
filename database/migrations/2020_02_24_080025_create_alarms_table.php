@@ -15,7 +15,7 @@ class CreateAlarmsTable extends Migration
     {
         Schema::create('alarms', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('device_id')->unsigned();
+            $table->unsignedBigInteger('device_id');
             $table->foreign('device_id')->references('id')->on('devices')->onDelete('cascade')->onUpdate('cascade');
             $table->string('stage');
             $table->timestamps();

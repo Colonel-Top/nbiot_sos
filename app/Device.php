@@ -8,7 +8,7 @@ class Device extends Model
 {
     //
     protected $fillable = [
-        'name','desc','device_id','device_lat','device_long','image1','image2','image3',
+        'name','description','device_id','device_lat','device_long','image1','image2','image3',
     ];
 
     public function alarms()
