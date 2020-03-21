@@ -30,32 +30,41 @@
         }
     </style>
 
-{{--@if(Auth::check())--}}
-{{--    <div class="container">--}}
-{{--        <!-- Codrops top bar -->--}}
+    <div class="container" style="margin-top:10%;">
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card animated fadeIn fast" style="background-color: #00284ca3; color:white!important;; ">
 
-{{--        <header class="clearfix">--}}
-{{--            <h1>Simple YouTube Menu Effect <span>A simple drop-down menu as seen on YouTube</span></h1>--}}
-{{--        </header>--}}
-{{--        <div class="main">--}}
-{{--            <p>This menu is inspired by the left side menu found on YouTube. When clicking on the menu label and icon, the main menu appears beneath and the menu icon slides to the right side while the label slides up. To close the menu, the menu icon needs to be clicked again.</p>--}}
-{{--            <div class="side">--}}
-{{--                <nav class="dr-menu">--}}
-{{--                    <div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label">Account</a></div>--}}
-{{--                    <ul>--}}
-{{--                        <li><a class="dr-icon dr-icon-user" href="#">Jason Quinn</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-camera" href="#">Videos</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-heart" href="#">Favorites</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-bullhorn" href="#">Subscriptions</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-download" href="#">Downloads</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-settings" href="#">Settings</a></li>--}}
-{{--                        <li><a class="dr-icon dr-icon-switch" href="#">Logout</a></li>--}}
-{{--                    </ul>--}}
-{{--                </nav>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div><!-- /container -->--}}
-{{--@endif--}}
+
+                    <div class="card-body ">
+                        <div class="container" style="text-align: center;">
+
+                            <h4>What you are expecting for ?</h4>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="{{route('login')}}"
+                                       class="btn btn-outline-success form-control" style="padding:100px;"><i
+                                                class="fas fa-key"></i></a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="{{route('register')}}"
+                                       class="btn btn-outline-danger form-control" style="padding:100px;"><i
+                                                class="fas fa-plus"></i></a>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{--@if(Auth::check())--}}
+
+    {{--@endif--}}
 
 
 
