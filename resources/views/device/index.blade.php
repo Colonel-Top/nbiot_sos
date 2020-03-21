@@ -35,7 +35,7 @@
             <hr>
             <div class="row">
 
-                @if(Auth::role != "admin")
+                @if(Auth::user()->role != "admin")
                     <div class="col-md-4 text-center">
 
 
@@ -126,7 +126,7 @@
 
                     </div>
                 @endif
-                @if(Auth::role != "admin")
+                @if(Auth::user()->role != "admin")
                     <div class="col-md-12">
                         @else
                             <div class="col-md-8">
