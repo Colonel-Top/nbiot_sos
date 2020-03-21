@@ -42,6 +42,12 @@
 
     <style>
 
+        a.disabled {
+            pointer-events: none;
+        }
+        span.disable-links {
+            pointer-events: none;
+        }
 
         .allfont {
             font-family: SukhumvitSet-Text;
