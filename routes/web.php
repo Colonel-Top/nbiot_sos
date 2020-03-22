@@ -18,7 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/api','HomeController@index')->name('def')->with(Session::flash('error','Method not allow'));
 Route::post('/api','APIController@data_incoming')->name('api.getdata');
+
 Route::prefix('admin')->group(function ()
 {
     Route::get('/user', 'User\AdminController@index')->name('user.management');
