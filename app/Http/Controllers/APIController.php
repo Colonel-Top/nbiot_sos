@@ -7,14 +7,15 @@ use Illuminate\Http\Request;
 
 class APIController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('web');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware('web');
+//    }
 
     public function data_incoming(Request $request)
     {
         $request = $request->json()->all();
+        dd($request);
         return response()->json(['success' => 'Data recorded','request'=>$request], 200);
         if (is_null($request))
             return response()->json(['error' => 'Not Authorized, we accept package in format only'], 555);

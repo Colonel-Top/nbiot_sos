@@ -29,7 +29,7 @@
             bottom: 0;
         }
     </style>
-@if(Auth::check())
+@if(!Auth::check())
     <div class="container" style="margin-top:10%;">
         <br>
         <div class="row justify-content-center">
