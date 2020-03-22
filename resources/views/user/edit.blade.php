@@ -82,6 +82,7 @@
                                 <br>
                                 <label>Last known online {{date('d/m/Y @ H:i:s', strtotime($user->updated_at))}}</label>
                                 <br>
+                                <br>
                                 <button type="submit" class="btn btn-outline-success form-control">Update User
                                 </button>
                                 <div class="row">
