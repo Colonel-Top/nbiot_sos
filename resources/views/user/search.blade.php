@@ -12,7 +12,7 @@
                         <th width="20%">Email</th>
                         <th width="20%">Type</th>
                         <th width="20%">Register at</th>
-                        <th width="10%">Last Login</th>
+                        <th width="10%">Last known online</th>
                         <th width="10%">Control</th>
 
                         </thead>
@@ -43,7 +43,7 @@
                                 </td>
                                 <td class="table-text">
                                     <a class="btn btn-outline-success"
-                                       href="#">
+                                       href="{{route('user.show.edit',$user->id)}}">
                                         Details
                                     </a>
                                 </td>

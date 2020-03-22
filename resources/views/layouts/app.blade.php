@@ -1256,6 +1256,11 @@
 </script>
 <div id="app">
     @if(Auth::check())
+        <?php
+        $user = \Illuminate\Support\Facades\Auth::user();
+        $user->updated_at = date('Y-m-d H:i:s');
+        $user->save();
+        ?>
         <div class="page-wrapper chiller-theme toggled">
             <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
                 <i class="fas fa-bars"></i>
@@ -1363,7 +1368,7 @@
                                 </li>
                             @endif
                             <li>
-                                <a href="#">
+                                <a href="{{route('profile.show.edit')}}">
                                     <i class="fa fa-folder"></i>
                                     <span>My Profile</span>
                                 </a>
@@ -1388,6 +1393,7 @@
                     {{--                    </a>--}}
                     <a href="{{route('logout')}}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                         <i class="fa fa-power-off"></i>
+
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
                           style="display: none;">

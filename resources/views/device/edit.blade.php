@@ -129,9 +129,9 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <a class="btn btn-basic form-control" style="color:red; border-color: red;"
-                                           href="{{route('device.delete',$device->id)}}"
+                                           href="{{route('device.delete',$iuser->id)}}"
                                            onclick="return confirm('Are you sure to Remove this device data? Once you done you cannot undo!')">
-                                            <i class="fas fa-ban"></i> Delete device
+                                            <i class="fas fa-ban"></i> Delete User
                                         </a>
 
                                     </div>

@@ -22,17 +22,27 @@ Route::post('/api','APIController@data_incoming')->name('api.getdata');
 Route::prefix('admin')->group(function ()
 {
     Route::get('/user', 'User\AdminController@index')->name('user.management');
+
     Route::post('/user/search', 'User\AdminController@search')->name('user.search');
+    Route::get('/user/edit/{id}', 'User\AdminController@showedit')->name('user.show.edit');
+    Route::post('/user/update', 'User\AdminController@update')->name('user.update');
+    Route::get('/user/delete/{id}','User\AdminController@delete')->name('user.delete');
+
     Route::post('/device/add', 'Device\AdminController@add')->name('device.add');
     Route::post('/device/update', 'Device\AdminController@update')->name('device.update');
     Route::get('/device/edit/{id}','Device\AdminController@showedit')->name('device.show.edit');
-
     Route::get('/device/delete/{id}','Device\AdminController@delete')->name('device.delete');
     Route::get('/device/delete/{id}/{image}','Device\AdminController@deleteimg')->name('device.image.delete');
 });
 
 Route::prefix('user')->group(function ()
 {
+
+
+    Route::get('/profile/edit', 'User\UserController@showedit')->name('profile.show.edit');
+    Route::post('/profile/update', 'User\UserController@update')->name('profile.update');
+
+
     Route::get('/alarm', 'Alarm\UserController@index')->name('alarm.management');
     Route::post('/alarm/search', 'Alarm\UserController@search')->name('alarm.search');
     Route::get('/device', 'Device\UserController@index')->name('device.management');
