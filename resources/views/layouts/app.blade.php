@@ -1277,9 +1277,9 @@
                         <div class="user-info">
           <span class="user-name">{{Auth::user()->name}}
           </span>
-                            <span class="user-role">{{ucfirst(Auth::user()->role)}}</span>
+                            <span class="user-role" @if(Auth::check() and Auth::user()->role == "admin") style="color:#ffa700!important;" @endif >{{ucfirst(Auth::user()->role)}}</span>
                             <span class="user-status">
-            <i class="fa fa-circle"></i>
+            <i class="fa fa-circle" @if(Auth::check() and Auth::user()->role == "admin") style="color:#ffa700!important;" @endif></i>
             <span>Last online: {{ \Carbon\Carbon::parse(Auth::user()->updated_at)->format('d/m/Y H:i:s')}}</span>
           </span>
                         </div>

@@ -15,6 +15,7 @@ class APIController extends Controller
     public function data_incoming(Request $request)
     {
         $request = $request->json()->all();
+        return $request;
         if (is_null($request))
             return response()->json(['error' => 'Not Authorized, we accept package in format only'], 555);
         $search = Device::where('device_id', $request['device_id'])->get()->first();
