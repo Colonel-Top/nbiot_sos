@@ -8,7 +8,7 @@
                     <table class="table no-margin">
                         <!-- Table Headings -->
                         <thead>
-                        <th width="20%">Name</th>
+                        <th width="20%">Device Name</th>
                         <th width="20%">Device IMEI</th>
                         <th width="10%">Latitude</th>
                         <th width="10%">Longtitude</th>
@@ -25,8 +25,10 @@
                         @foreach($alarms as $alarm)
 
                             <tr>
+
+{{--                                {{dd($alarm->devices()->get())}}--}}
                                 <td class="table-text">
-                                    {{($alarm->name)}}
+                                    {{($alarm->devices()->get()->first()->name)}}
                                 </td>
                                 <td class="table-text">
                                     {{($alarm->devices()->get()->first()->device_id)}}

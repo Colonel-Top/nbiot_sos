@@ -126,7 +126,7 @@
 {{--                </div>--}}
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header">Device List</div>
+                        <div class="card-header">Alarm List</div>
                         <div class="card-body">
                             <div class="row" id="livedata">
 

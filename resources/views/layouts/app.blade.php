@@ -1255,7 +1255,7 @@
     });
 </script>
 <div id="app">
-    @if(Auth::check())
+    @if(Auth::check() and Auth::user()->role != "requested")
         <?php
         $user = \Illuminate\Support\Facades\Auth::user();
         $user->updated_at = date('Y-m-d H:i:s');
@@ -1309,7 +1309,7 @@
                                 <span>General</span>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{route('home')}}">
                                     <i class="fa fa-tachometer-alt"></i>
                                     <span>Dashboard</span>
                                     {{--                                    <span class="badge badge-pill badge-warning">New</span>--}}

@@ -32,7 +32,7 @@ class UserController extends Controller
     public function index()
     {
 
-        $alarms = Alarm::paginate(10);
+        $alarms = Alarm::orderBy('id','desc')->paginate(10);
         return view(' alarm.index', ['alarms' => $alarms]);
     }
 
@@ -40,7 +40,7 @@ class UserController extends Controller
     {
 //        dd($request);
         if ($request->ajax()) {
-            $target_dev = Device::where('device_id','like','%'.$request->searech.'%')->get()->first();
+            $target_dev = Device::where('device_id','like','%'.$request->search.'%')->get()->first();
             $alarminfo = $target_dev->alarms()->get();
 //            #$devicesinfo = Alarm::Where('name', 'like', '%' . $request->search . '%')->orWhere('device_id', 'like', '%' . $request->search . '%')->orWhere('description', 'like', '%' . $request->search . '%')->orWhere('device_lat', 'like', '%' . $request->search . '%')->orWhere('device_long', 'like', '%' . $request->search . '%')->get();
             $alarmcount = $alarminfo->count();

@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\User;
+use App\Device;
+use Auth;
+use App\Alarm;
 
 class HomeController extends Controller
 {
@@ -23,6 +28,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $alarm = Alarm::orderBy('id','desc')->take(1)->get()->first();
+
+        $device = Device::findOrFail($alarm->device_id)->get()->first();
+
+        return view('home',['device'=>$device]);
     }
 }
