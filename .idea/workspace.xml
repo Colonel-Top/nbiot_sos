@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70bb2f5d-5ad6-4e51-aeec-aa01d3290458" name="Default Changelist" comment="API Change">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+    <list default="true" id="70bb2f5d-5ad6-4e51-aeec-aa01d3290458" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Alarm.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Alarm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Alarm/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Alarm/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alarm/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alarm/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/alarm/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/alarm/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="510">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
               <folding>
                 <element signature="e#41#69#0#PHP" expanded="true" />
               </folding>
@@ -46,15 +36,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1996">
               <caret line="132" column="56" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/alarm/search.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -101,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="1257" column="58" selection-start-line="1257" selection-start-column="58" selection-end-line="1257" selection-end-column="58" />
+            <state relative-caret-position="-573">
+              <caret line="1269" column="37" selection-start-line="1269" selection-start-column="37" selection-end-line="1269" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -113,11 +94,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="646">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/homes.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -225,9 +215,10 @@
         <option value="$PROJECT_DIR$/resources/views/alarm/search.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/alarm/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Alarm/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/homes.blade.php" />
       </list>
     </option>
   </component>
@@ -505,17 +496,17 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/User" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SERVER\nbiot_sos\resources\views" />
       <recent name="D:\SERVER\nbiot_sos\app\Http\Controllers\User" />
       <recent name="D:\SERVER\nbiot_sos\resources\views\user" />
       <recent name="D:\SERVER\nbiot_sos\app\Http\Controllers\Alarm" />
       <recent name="D:\SERVER\nbiot_sos\resources\views\alarm" />
-      <recent name="D:\SERVER\nbiot_sos\resources\views\device" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -564,7 +555,7 @@
       <workItem from="1584884383831" duration="1720000" />
       <workItem from="1584899456237" duration="6770000" />
       <workItem from="1584941153382" duration="4466000" />
-      <workItem from="1584973022701" duration="3036000" />
+      <workItem from="1584973022701" duration="3580000" />
     </task>
     <task id="LOCAL-00001" summary="New Welcome screen">
       <created>1584818968413</created>
@@ -671,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1584903284317</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Final change prepare for beta release">
+      <created>1584979657177</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1584979657177</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105254000" />
+    <option name="totallyTimeSpent" value="105798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -696,7 +694,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" visible="true" weight="0.21007502" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.21007502" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -715,7 +713,8 @@
     <MESSAGE value="API" />
     <MESSAGE value="User profile editable" />
     <MESSAGE value="API Change" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Change" />
+    <MESSAGE value="Final change prepare for beta release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final change prepare for beta release" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -729,7 +728,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa4024.43345/YouTubeLeftSideMenu/css/default.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa4024.46879/YouTubeLeftSideMenu/css/default.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa4024.46879/YouTubeLeftSideMenu/css/component.css" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa4024.49674/YouTubeLeftSideMenu/index.html" />
@@ -1012,16 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#41#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Device/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1056,12 +1044,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="-573">
+          <caret line="1269" column="37" selection-start-line="1269" selection-start-column="37" selection-end-line="1269" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#41#69#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1076,10 +1071,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="1257" column="58" selection-start-line="1257" selection-start-column="58" selection-end-line="1257" selection-end-column="58" />
+        <state relative-caret-position="646">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/homes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>

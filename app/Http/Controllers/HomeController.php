@@ -28,10 +28,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $alarm = Alarm::orderBy('id','desc')->take(1)->get()->first();
+        if(Alarm::count() >0) {
+            $alarm = Alarm::orderBy('id', 'desc')->take(1)->get()->first();
 
-        $device = Device::findOrFail($alarm->device_id)->get()->first();
+            $device = Device::findOrFail($alarm->device_id)->get()->first();
 
-        return view('home',['device'=>$device]);
+            return view('home', ['device' => $device]);
+        }
+        else
+            return view('homes' );
     }
 }
