@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70bb2f5d-5ad6-4e51-aeec-aa01d3290458" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Device.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Device.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterDir="false" />
-    </list>
+    <list default="true" id="70bb2f5d-5ad6-4e51-aeec-aa01d3290458" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="698">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-start-column="2" selection-end-line="51" selection-end-column="22" />
               <folding>
                 <element signature="e#41#69#0#PHP" expanded="true" />
               </folding>
@@ -97,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Alarm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="272">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -212,8 +206,8 @@
         <option value="$PROJECT_DIR$/resources/views/homes.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Device.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
         <option value="$PROJECT_DIR$/app/Alarm.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
       </list>
     </option>
   </component>
@@ -551,7 +545,7 @@
       <workItem from="1584899456237" duration="6770000" />
       <workItem from="1584941153382" duration="4466000" />
       <workItem from="1584973022701" duration="4301000" />
-      <workItem from="1587973757763" duration="4082000" />
+      <workItem from="1587973757763" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="New Welcome screen">
       <created>1584818968413</created>
@@ -683,7 +677,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110601000" />
+    <option name="totallyTimeSpent" value="110826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1090,20 +1084,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
+    <entry file="file://$PROJECT_DIR$/app/Alarm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="21" />
-          <folding>
-            <element signature="e#41#69#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Alarm.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        <state relative-caret-position="698">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-start-column="2" selection-end-line="51" selection-end-column="22" />
+          <folding>
+            <element signature="e#41#69#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

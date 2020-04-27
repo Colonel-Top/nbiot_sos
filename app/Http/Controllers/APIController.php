@@ -47,9 +47,9 @@ class APIController extends Controller
         $alarm['device_id'] = $search->id;
         $alarm['stage'] = $request['state'];
         $alarm = Alarm::Create($alarm);
-        $fp = fopen('lidn.txt', 'w');
-        fwrite($fp, json_encode($alarm));
-        fclose($fp);
+//        $fp = fopen('lidn.txt', 'w');
+//        fwrite($fp, json_encode($alarm));
+//        fclose($fp);
 
         return response()->json(['success' => 'Data recorded'], 200);
     }
