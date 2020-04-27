@@ -52,6 +52,7 @@ class APIController extends Controller
 //        fclose($fp);
 
         $device_id = (string)$device_id;
+        $device_id = str_replace(".","",$device_id);
 //        CURL
         $groupid = "Ca16df5140162b8ea657fa396fc53250f";
         $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweWVsE5VJLBBGBErt6LAqwetzg0b7bEQgmFROsoX235yYlT+ncKoo5tltqBWuaeRmJGHomYKY6eVj66h+UTFG8qArb+bcU2QKYgZoSANbAdB04t89/1O/w1cDnyilFU=";
