@@ -12,7 +12,7 @@
 
                 <h5 class="COLFont font16 hardgolden-font">-----------<i class="fas fa-spa"></i>-----------
                 </h5>
-                <p>We will reload page in <span id="countdowntimer">5 </span> seconds</p>
+                <p>We will reload page in <span id="countdowntimer">50 </span> seconds</p>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5" style="width: 0%"></div>
                 </div>
@@ -181,11 +181,11 @@
         </div>
     </div>
     <script>
-        var timeleft = 5;
+        var timeleft = 50;
         var downloadTimer = setInterval(function(){
             timeleft--;
             document.getElementById("countdowntimer").textContent = timeleft;
-            var seter =(((5 - timeleft)*100)/5);
+            var seter =(((50 - timeleft)*100)/50);
             document.getElementById("progressBar").style.width = seter+"%";
             if(timeleft <= 0)
                 clearInterval(downloadTimer);
