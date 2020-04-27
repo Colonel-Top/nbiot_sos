@@ -56,7 +56,8 @@ class APIController extends Controller
         $groupid = "Ca16df5140162b8ea657fa396fc53250f";
 $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweWVsE5VJLBBGBErt6LAqwetzg0b7bEQgmFROsoX235yYlT+ncKoo5tltqBWuaeRmJGHomYKY6eVj66h+UTFG8qArb+bcU2QKYgZoSANbAdB04t89/1O/w1cDnyilFU=";
 
-        $message = "Device ID Alarm: $alarm->device_id Checkout at: http://127.0.0.1/user/device/info/1";
+        $message = "Device ID Alarm: $device_id";
+        $message2 = "Checkout at: http://127.0.0.1/user/device/info/$alarm->device_id ";
 //        $$message = "No Permission"; //Replace Message
 //                $message = "ALL PERMISSION HAS BEEN RESET, You are not have permission"; //Replace Message
         $ch = curl_init();
@@ -191,6 +192,38 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
             $fp = fopen('lidn.txt', 'w');
         fwrite($fp, json_encode(curl_error($ch)));
         fclose($fp);
+
+        }
+
+        curl_close($ch);
+
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/message/push');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+//
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message2\"\n    }\n  ]\n}");
+
+        curl_setopt($ch, CURLOPT_POST, 1);
+
+
+//                while ($checker == 1)
+//                {
+//                    $checker = $database->getReference('state')->getValue();
+//                }
+        $headers = array();
+        $headers[] = $bearer;
+        $headers[] = 'Cache-Control: no-cache';
+        $headers[] = 'Content-Type: application/json';
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        $result = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+            $fp = fopen('lidn.txt', 'w');
+            fwrite($fp, json_encode(curl_error($ch)));
+            fclose($fp);
 
         }
         curl_close($ch);
