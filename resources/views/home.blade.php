@@ -26,7 +26,7 @@
             <div class="row justify-content-center text-center">
                 <div class="col-md-12">
                     <section name="map">
-                        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openlinkmap.org/small.php?lat={{$device->device_lat}}&lon={{$device->device_long}}&zoom=18&type=node" style="border: 1px solid black"></iframe>
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openlinkmap.org/small.php?lat={{$device->device_lat}}&lon={{$device->device_long}}&zoom=18&type=node" style="border: 1px solid black"></iframe>
                     </section>
                     <hr>
                 </div>
