@@ -80,6 +80,10 @@ $bearer = "Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweWVsE5VJLBBGBErt6LAqwetz
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
             echo 'Error:' . curl_error($ch);
+            $fp = fopen('lidn.txt', 'w');
+        fwrite($fp, json_encode(curl_error($ch)));
+        fclose($fp);
+
         }
         curl_close($ch);
 
