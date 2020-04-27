@@ -171,7 +171,7 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
 
 
 
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
+//        curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
         curl_setopt($ch, CURLOPT_POST, 1);
 
 
