@@ -72,7 +72,7 @@ $valuepush = "{\n
     \"to\": \"$groupid\",\n
             \"messages\": [\n
                 {\n
-       {\n
+  
   \"type\": \"bubble\",\n
   \"body\": {\n
     \"type\": \"box\",\n
