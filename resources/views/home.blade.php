@@ -89,12 +89,12 @@
                         </div>
                     @endif
                 </div>
-                {{--                <div class="col-md-6">--}}
-                {{--                    <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0"--}}
-                {{--                            marginwidth="0"--}}
-                {{--                            src="https://www.openstreetmap.org/export/embed.html?bbox=460.61147332191473%2C14.072772438190396%2C460.6159526109696%2C14.075176405295588&amp;layer=mapnik&amp;marker={{$device->device_lat}}%2C{{$device->device_long}}"--}}
-                {{--                            style="border: 1px solid black"></iframe>--}}
-                {{--                </div>--}}
+                                <div class="col-md-6">
+                                    <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0"
+                                            marginwidth="0"
+                                            src="https://www.openstreetmap.org/export/embed.html?bbox=460.61147332191473%2C14.072772438190396%2C460.6159526109696%2C14.075176405295588&amp;layer=mapnik&amp;marker={{$device->device_lat}}%2C{{$device->device_long}}"
+                                            style="border: 1px solid black"></iframe>
+                                </div>
 
 
             </div>
