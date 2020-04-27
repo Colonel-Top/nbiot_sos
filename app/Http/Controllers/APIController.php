@@ -54,7 +54,7 @@ class APIController extends Controller
 
 //        CURL
         $groupid = "Ca16df5140162b8ea657fa396fc53250f";
-$bearer = "Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweWVsE5VJLBBGBErt6LAqwetzg0b7bEQgmFROsoX235yYlT+ncKoo5tltqBWuaeRmJGHomYKY6eVj66h+UTFG8qArb+bcU2QKYgZoSANbAdB04t89/1O/w1cDnyilFU=";
+$bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweWVsE5VJLBBGBErt6LAqwetzg0b7bEQgmFROsoX235yYlT+ncKoo5tltqBWuaeRmJGHomYKY6eVj66h+UTFG8qArb+bcU2QKYgZoSANbAdB04t89/1O/w1cDnyilFU=";
 
         $message = "Device ID Alarm: $alarm->device_id Checkout at: https://aed.colonel-tech.com/user/alarm";
         $message = "No Permission"; //Replace Message
