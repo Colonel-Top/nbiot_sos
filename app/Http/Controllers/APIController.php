@@ -68,7 +68,7 @@ class APIController extends Controller
 //
 //        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message\"\n    }\n  ]\n}");
 
-$valuepush = {"\n
+$valuepush = "{\n
     \"to\": \"$groupid\",\n
             \"messages\": [\n
                 {\n
