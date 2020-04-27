@@ -59,7 +59,7 @@ class APIController extends Controller
         curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/message/push');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $iddd= substr($search->id,0,10);
-//$message = "Alarm Device: $alarm=>device_id";
+$message = "Alarm Device: $alarm=>device_id";
                     curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message\"\n    }\n  ]\n}");
         $valuepush = "{  
    \"to\":\"Ca16df5140162b8ea657fa396fc53250f\",
@@ -285,7 +285,7 @@ $iddd= substr($search->id,0,10);
       }
    ]
 }";
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
+//        curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
 
 
         curl_setopt($ch, CURLOPT_POST, 1);
