@@ -65,109 +65,109 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 //
-//        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message\"\n    }\n  ]\n}");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message\"\n    }\n  ]\n}");
 
 
-        $valuepush = "{  
-   \"to\":\"$groupid\",
-   \"messages\":[  
-        {
-         \"type\":\"flex\",
-         \"altText\":\"AED Smart IoT Device\",
-         \"contents\":{  
-         
-  \n\"type\": \"bubble\",
- \n \"body\": {
-   \n \"type\": \"box\",
-  \n  \"layout\": \"vertical\",
-   \n \"contents\": [
-   \n   {
-   \n     \"type\": \"text\",
-   \n     \"text\": \"AED ALERT!\",
-  \n      \"weight\": \"bold\",
-   \n     \"size\": \"xl\",
-   \n     \"color\": \"#f54242\"
-   \n   },
-    \n  {
-   \n     \"type\": \"box\",
-   \n     \"layout\": \"vertical\",
-\n        \"margin\": \"lg\",
-\n\       \"spacing\": \"sm\",
-\n        \"contents\": [
-\n          {
-\n            \"type\": \"box\",
-      \n      \"layout\": \"baseline\",
-\n            \"spacing\": \"sm\",
-\n            \"contents\": [
-\n              {
-\n                \"type\": \"text\",
-\n                \"text\": \"Device ID:\",
-\n                \"color\": \"#aaaaaa\",
-\n                \"size\": \"sm\",
-\n                \"flex\": 2
-\n              },
-\n              {
-\n                \"type\": \"text\",
-\n                \"text\": \"$alarm->device_id\",
-\n                \"wrap\": true,
-\n                \"color\": \"#666666\",
-\n                \"size\": \"sm\",
-\n                \"flex\": 5
-\n              }
-\n            ]
-\n          },
-\n          {
-\n            \"type\": \"box\",
-\n            \"layout\": \"baseline\",
-\n            \"spacing\": \"sm\",
-\n            \"contents\": [
-\n              {
-\n                \"type\": \"text\",
-\n                \"text\": \"Alert time\",
-\n                \"color\": \"#aaaaaa\",
-\n                \"size\": \"sm\",
-\n                \"flex\": 2
-\n              },
-\n              {
-\n                \"type\": \"text\",
-\n                \"text\": \"$alarm->created_at\",
-\n                \"wrap\": true,
-\n                \"color\": \"#666666\",
-\n                \"size\": \"sm\",
-\n                \"flex\": 5
-\n              }
-\n            ]
-\n          }
-\n        ]
-\n      }
-\n    ]
-\n  },
-\n  \"footer\": {
-\n    \"type\": \"box\",
-\n    \"layout\": \"vertical\",
-\n    \"spacing\": \"sm\",
-\n    \"contents\": [
-\n      {
-\n        \"type\": \"button\",
-\n        \"style\": \"link\",
-\n        \"height\": \"sm\",
-\n        \"action\": {
-\n          \"type\": \"uri\",
-\n          \"label\": \"CHECK OUT\",
-\n          \"uri\": \"http://127.0.0.1/user/alarm\"
-\n        }
-\n      },
-\n      {
-\n        \"type\": \"spacer\",
-\n        \"size\": \"sm\"
-\n      }
-\n    ],
-\n    \"flex\": 0
-\n  }
-\n}
-\n}
-\n]
-\n}";
+//        $valuepush = "{
+//   \"to\":\"$groupid\",
+//   \"messages\":[
+//        {
+//         \"type\":\"flex\",
+//         \"altText\":\"AED Smart IoT Device\",
+//         \"contents\":{
+//
+//  \n\"type\": \"bubble\",
+// \n \"body\": {
+//   \n \"type\": \"box\",
+//  \n  \"layout\": \"vertical\",
+//   \n \"contents\": [
+//   \n   {
+//   \n     \"type\": \"text\",
+//   \n     \"text\": \"AED ALERT!\",
+//  \n      \"weight\": \"bold\",
+//   \n     \"size\": \"xl\",
+//   \n     \"color\": \"#f54242\"
+//   \n   },
+//    \n  {
+//   \n     \"type\": \"box\",
+//   \n     \"layout\": \"vertical\",
+//\n        \"margin\": \"lg\",
+//\n\       \"spacing\": \"sm\",
+//\n        \"contents\": [
+//\n          {
+//\n            \"type\": \"box\",
+//      \n      \"layout\": \"baseline\",
+//\n            \"spacing\": \"sm\",
+//\n            \"contents\": [
+//\n              {
+//\n                \"type\": \"text\",
+//\n                \"text\": \"Device ID:\",
+//\n                \"color\": \"#aaaaaa\",
+//\n                \"size\": \"sm\",
+//\n                \"flex\": 2
+//\n              },
+//\n              {
+//\n                \"type\": \"text\",
+//\n                \"text\": \"$alarm->device_id\",
+//\n                \"wrap\": true,
+//\n                \"color\": \"#666666\",
+//\n                \"size\": \"sm\",
+//\n                \"flex\": 5
+//\n              }
+//\n            ]
+//\n          },
+//\n          {
+//\n            \"type\": \"box\",
+//\n            \"layout\": \"baseline\",
+//\n            \"spacing\": \"sm\",
+//\n            \"contents\": [
+//\n              {
+//\n                \"type\": \"text\",
+//\n                \"text\": \"Alert time\",
+//\n                \"color\": \"#aaaaaa\",
+//\n                \"size\": \"sm\",
+//\n                \"flex\": 2
+//\n              },
+//\n              {
+//\n                \"type\": \"text\",
+//\n                \"text\": \"$alarm->created_at\",
+//\n                \"wrap\": true,
+//\n                \"color\": \"#666666\",
+//\n                \"size\": \"sm\",
+//\n                \"flex\": 5
+//\n              }
+//\n            ]
+//\n          }
+//\n        ]
+//\n      }
+//\n    ]
+//\n  },
+//\n  \"footer\": {
+//\n    \"type\": \"box\",
+//\n    \"layout\": \"vertical\",
+//\n    \"spacing\": \"sm\",
+//\n    \"contents\": [
+//\n      {
+//\n        \"type\": \"button\",
+//\n        \"style\": \"link\",
+//\n        \"height\": \"sm\",
+//\n        \"action\": {
+//\n          \"type\": \"uri\",
+//\n          \"label\": \"CHECK OUT\",
+//\n          \"uri\": \"http://127.0.0.1/user/alarm\"
+//\n        }
+//\n      },
+//\n      {
+//\n        \"type\": \"spacer\",
+//\n        \"size\": \"sm\"
+//\n      }
+//\n    ],
+//\n    \"flex\": 0
+//\n  }
+//\n}
+//\n}
+//\n]
+//\n}";
 
 
 
