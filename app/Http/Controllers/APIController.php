@@ -166,9 +166,7 @@ $valuepush = "{\n
                     ]\n
                     }";
 
-        $fp = fopen('lidn.txt', 'w');
-        fwrite($fp, $valuepush);
-        fclose($fp);
+    
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -187,9 +185,7 @@ $valuepush = "{\n
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
             echo 'Error:' . curl_error($ch);
-            $fp = fopen('lidn.txt', 'w');
-            fwrite($fp, json_encode(curl_error($ch)));
-            fclose($fp);
+
 
         }
 
@@ -219,9 +215,7 @@ $valuepush = "{\n
         $result = curl_exec($ch);
         if (curl_errno($ch)) {
             echo 'Error:' . curl_error($ch);
-            $fp = fopen('lidn.txt', 'w');
-            fwrite($fp, json_encode(curl_error($ch)));
-            fclose($fp);
+
 
         }
         curl_close($ch);
