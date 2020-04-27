@@ -8,7 +8,7 @@ class Alarm extends Model
 {
     //
 
-    protected $fillable = ['device_id','state','id'];
+    protected $fillable = ['device_id','stage','id'];
     public function devices()
     {
         return $this->belongsTo('App\Device','device_id');
