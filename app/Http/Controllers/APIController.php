@@ -72,97 +72,102 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
    \"to\":\"$groupid\",
    \"messages\":[  
         {
-  \"type\": \"bubble\",
-  \"body\": {
-    \"type\": \"box\",
-    \"layout\": \"vertical\",
-    \"contents\": [
-      {
-        \"type\": \"text\",
-        \"text\": \"AED ALERT!\",
-        \"weight\": \"bold\",
-        \"size\": \"xl\",
-        \"color\": \"#f54242\"
-      },
-      {
-        \"type\": \"box\",
-        \"layout\": \"vertical\",
-        \"margin\": \"lg\",
-        \"spacing\": \"sm\",
-        \"contents\": [
-          {
-            \"type\": \"box\",
-            \"layout\": \"baseline\",
-            \"spacing\": \"sm\",
-            \"contents\": [
-              {
-                \"type\": \"text\",
-                \"text\": \"Device ID:\",
-                \"color\": \"#aaaaaa\",
-                \"size\": \"sm\",
-                \"flex\": 2
-              },
-              {
-                \"type\": \"text\",
-                \"text\": \"$alarm->device_id\",
-                \"wrap\": true,
-                \"color\": \"#666666\",
-                \"size\": \"sm\",
-                \"flex\": 5
-              }
-            ]
-          },
-          {
-            \"type\": \"box\",
-            \"layout\": \"baseline\",
-            \"spacing\": \"sm\",
-            \"contents\": [
-              {
-                \"type\": \"text\",
-                \"text\": \"Alert time\",
-                \"color\": \"#aaaaaa\",
-                \"size\": \"sm\",
-                \"flex\": 2
-              },
-              {
-                \"type\": \"text\",
-                \"text\": \"$alarm->created_at\",
-                \"wrap\": true,
-                \"color\": \"#666666\",
-                \"size\": \"sm\",
-                \"flex\": 5
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  \"footer\": {
-    \"type\": \"box\",
-    \"layout\": \"vertical\",
-    \"spacing\": \"sm\",
-    \"contents\": [
-      {
-        \"type\": \"button\",
-        \"style\": \"link\",
-        \"height\": \"sm\",
-        \"action\": {
-          \"type\": \"uri\",
-          \"label\": \"CHECK OUT\",
-          \"uri\": \"http://127.0.0.1/user/alarm\"
-        }
-      },
-      {
-        \"type\": \"spacer\",
-        \"size\": \"sm\"
-      }
-    ],
-    \"flex\": 0
-  }
-}
-]
-}";
+         \"type\":\"flex\",
+         \"altText\":\"AED Smart IoT Device\",
+         \"contents\":{  
+         
+  \n\"type\": \"bubble\",
+ \n \"body\": {
+   \n \"type\": \"box\",
+  \n  \"layout\": \"vertical\",
+   \n \"contents\": [
+   \n   {
+   \n     \"type\": \"text\",
+   \n     \"text\": \"AED ALERT!\",
+  \n      \"weight\": \"bold\",
+   \n     \"size\": \"xl\",
+   \n     \"color\": \"#f54242\"
+   \n   },
+    \n  {
+   \n     \"type\": \"box\",
+   \n     \"layout\": \"vertical\",
+\n        \"margin\": \"lg\",
+\n\       \"spacing\": \"sm\",
+\n        \"contents\": [
+\n          {
+\n            \"type\": \"box\",
+      \n      \"layout\": \"baseline\",
+\n            \"spacing\": \"sm\",
+\n            \"contents\": [
+\n              {
+\n                \"type\": \"text\",
+\n                \"text\": \"Device ID:\",
+\n                \"color\": \"#aaaaaa\",
+\n                \"size\": \"sm\",
+\n                \"flex\": 2
+\n              },
+\n              {
+\n                \"type\": \"text\",
+\n                \"text\": \"$alarm->device_id\",
+\n                \"wrap\": true,
+\n                \"color\": \"#666666\",
+\n                \"size\": \"sm\",
+\n                \"flex\": 5
+\n              }
+\n            ]
+\n          },
+\n          {
+\n            \"type\": \"box\",
+\n            \"layout\": \"baseline\",
+\n            \"spacing\": \"sm\",
+\n            \"contents\": [
+\n              {
+\n                \"type\": \"text\",
+\n                \"text\": \"Alert time\",
+\n                \"color\": \"#aaaaaa\",
+\n                \"size\": \"sm\",
+\n                \"flex\": 2
+\n              },
+\n              {
+\n                \"type\": \"text\",
+\n                \"text\": \"$alarm->created_at\",
+\n                \"wrap\": true,
+\n                \"color\": \"#666666\",
+\n                \"size\": \"sm\",
+\n                \"flex\": 5
+\n              }
+\n            ]
+\n          }
+\n        ]
+\n      }
+\n    ]
+\n  },
+\n  \"footer\": {
+\n    \"type\": \"box\",
+\n    \"layout\": \"vertical\",
+\n    \"spacing\": \"sm\",
+\n    \"contents\": [
+\n      {
+\n        \"type\": \"button\",
+\n        \"style\": \"link\",
+\n        \"height\": \"sm\",
+\n        \"action\": {
+\n          \"type\": \"uri\",
+\n          \"label\": \"CHECK OUT\",
+\n          \"uri\": \"http://127.0.0.1/user/alarm\"
+\n        }
+\n      },
+\n      {
+\n        \"type\": \"spacer\",
+\n        \"size\": \"sm\"
+\n      }
+\n    ],
+\n    \"flex\": 0
+\n  }
+\n}
+\n}
+\n]
+\n}";
 
 
 
