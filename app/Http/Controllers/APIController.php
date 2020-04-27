@@ -166,7 +166,7 @@ $valuepush = "{\n
                     ]\n
                     }";
 
-    
+
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -189,35 +189,6 @@ $valuepush = "{\n
 
         }
 
-        curl_close($ch);
-
-        $ch = curl_init();
-
-        curl_setopt($ch, CURLOPT_URL, 'https://api.line.me/v2/bot/message/push');
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-//
-        curl_setopt($ch, CURLOPT_POSTFIELDS, "{\n  \"to\": \"$groupid\",\n  \"messages\": [\n    {\n      \"type\": \"text\",\n      \"text\": \"$message2\"\n    }\n  ]\n}");
-
-        curl_setopt($ch, CURLOPT_POST, 1);
-
-
-//                while ($checker == 1)
-//                {
-//                    $checker = $database->getReference('state')->getValue();
-//                }
-        $headers = array();
-        $headers[] = $bearer;
-        $headers[] = 'Cache-Control: no-cache';
-        $headers[] = 'Content-Type: application/json';
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-        $result = curl_exec($ch);
-        if (curl_errno($ch)) {
-            echo 'Error:' . curl_error($ch);
-
-
-        }
         curl_close($ch);
 
 
