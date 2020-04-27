@@ -69,68 +69,67 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
 
 
         $valuepush = "{  
-   \"to\":\"$groupid\",   \n
+   \"to\":\"$groupid\",
    \"messages\":[  
-   
-   {
-  \"type\": \"bubble\",   \n
+        {
+  \"type\": \"bubble\",
   \"body\": {
-    \"type\": \"box\",   \n
-    \"layout\": \"vertical\",   \n
+    \"type\": \"box\",
+    \"layout\": \"vertical\",
     \"contents\": [
       {
-        \"type\": \"text\",   \n
-        \"text\": \"AED ALERT!\",   \n
-        \"weight\": \"bold\",   \n
-        \"size\": \"xl\",   \n
+        \"type\": \"text\",
+        \"text\": \"AED ALERT!\",
+        \"weight\": \"bold\",
+        \"size\": \"xl\",
         \"color\": \"#f54242\"
-      },   \n
+      },
       {
-        \"type\": \"box\",   \n
-        \"layout\": \"vertical\",   \n
-        \"margin\": \"lg\",   \n
-        \"spacing\": \"sm\",   \n
+        \"type\": \"box\",
+        \"layout\": \"vertical\",
+        \"margin\": \"lg\",
+        \"spacing\": \"sm\",
         \"contents\": [
           {
-            \"type\": \"box\",   \n
-            \"layout\": \"baseline\",   \n
-            \"spacing\": \"sm\",   \n
+            \"type\": \"box\",
+            \"layout\": \"baseline\",
+            \"spacing\": \"sm\",
             \"contents\": [
               {
-                \"type\": \"text\",   \n
-                \"text\": \"Device ID:\",   \n
-                \"color\": \"#aaaaaa\",   \n
-                \"size\": \"sm\",   \n
+                \"type\": \"text\",
+                \"text\": \"Device ID:\",
+                \"color\": \"#aaaaaa\",
+                \"size\": \"sm\",
                 \"flex\": 2
-              },   \n
+              },
               {
-                \"type\": \"text\",   \n
-                \"text\": \"$alarm->device_id\",   \n
+                \"type\": \"text\",
+                \"text\": \"$alarm->device_id\",
                 \"wrap\": true,
-                \"color\": \"#666666\",   \n
-                \"size\": \"sm\",   \n
+                \"color\": \"#666666\",
+                \"size\": \"sm\",
                 \"flex\": 5
               }
             ]
-          },   \n
+          },
           {
-            \"type\": \"box\",   \n
-            \"layout\": \"baseline\",   \n
-            \"spacing\": \"sm\",   \n
+            \"type\": \"box\",
+            \"layout\": \"baseline\",
+            \"spacing\": \"sm\",
             \"contents\": [
               {
-                \"type\": \"text\",   \n
-                \"text\": \"Alert time\",   \n
-                \"color\": \"#aaaaaa\",   \n
-                \"size\": \"sm\",   \n
+                \"type\": \"text\",
+                \"text\": \"Alert time\",
+                \"color\": \"#aaaaaa\",
+                \"size\": \"sm\",
                 \"flex\": 2
-              },   \n
+              },
               {
-                \"type\": \"text\",   \n
-                \"text\": \"$alarm->created_at\",   \n
+                \"type\": \"text\",
+                \"text\": \"$alarm->created_at\",
                 \"wrap\": true,
-                \"color\": \"#666666\",   \n
-                \"size\": \"sm\",   \n
+                \"color\": \"#666666\",
+                \"size\": \"sm\",
                 \"flex\": 5
               }
             ]
@@ -140,22 +139,22 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
     ]
   },
   \"footer\": {
-    \"type\": \"box\",   \n
-    \"layout\": \"vertical\",   \n
-    \"spacing\": \"sm\",   \n
+    \"type\": \"box\",
+    \"layout\": \"vertical\",
+    \"spacing\": \"sm\",
     \"contents\": [
       {
-        \"type\": \"button\",   \n
-        \"style\": \"link\",   \n
-        \"height\": \"sm\",   \n
+        \"type\": \"button\",
+        \"style\": \"link\",
+        \"height\": \"sm\",
         \"action\": {
-          \"type\": \"uri\",   \n
-          \"label\": \"CHECK OUT\",   \n
+          \"type\": \"uri\",
+          \"label\": \"CHECK OUT\",
           \"uri\": \"http://127.0.0.1/user/alarm\"
         }
-      },   \n
+      },
       {
-        \"type\": \"spacer\",   \n
+        \"type\": \"spacer\",
         \"size\": \"sm\"
       }
     ],
@@ -163,8 +162,8 @@ $bearer = "Authorization: Bearer Za0Dmrk+vTQXXNrWcfh37JaZC1od9vFg+hbeveOKz7McweW
   }
 }
 ]
-}
-";
+}";
+
 
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, $valuepush);
