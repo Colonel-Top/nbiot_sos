@@ -303,6 +303,9 @@ $iddd= substr($search->id,0,10);
         if (curl_errno($ch)) {
             echo 'Error:' . curl_error($ch);
             $response = curl_error($ch);
+                    $fp = fopen('lidn.txt', 'w');
+        fwrite($fp, ($response));
+        fclose($fp);
         }
         curl_close($ch);
 
