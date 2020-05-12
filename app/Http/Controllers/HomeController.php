@@ -28,6 +28,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(Auth::check() and Auth::user()->role == "requested")
+        {
+            return view('none' );
+        }
         if(Alarm::count() >0) {
             $alarm = Alarm::orderBy('id', 'desc')->take(1)->get()->first();
 
