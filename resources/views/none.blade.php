@@ -6,7 +6,8 @@
         <div class="row justify-content-center">
 
             <div class="col-md-12 text-center animated pulse">
-
+<br>
+<br>
                 <h5 class="COLFont font16 ">"Your Permission still on request please Contact your administrator to grant your permission"</h5>
                 {{--                <h5 class="COLFont font16 ">"Device Information"</h5>--}}
 
@@ -14,7 +15,7 @@
                 </h5>
 
                 <a href="{{route('logout')}}"  onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                    <i class="fa fa-power-off"></i>
+                    <i class="fa fa-power-off" style="color:black;"> LOGOUT </i>
 
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
